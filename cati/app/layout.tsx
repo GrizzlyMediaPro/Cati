@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Catalina Nae Iancu - Cabinet Stomatologic",
-  description: "Cabinet stomatologic modern cu servicii de înaltă calitate. Dr. Catalina Nae Iancu oferă tratamente dentare profesionale într-un mediu confortabil.",
+  title: "Dr. Catalina-Ionela Iancu - Cabinet Stomatologic",
+  description: "Cabinet stomatologic modern cu servicii de înaltă calitate. Dr. Catalina-Ionela Iancu oferă tratamente dentare profesionale într-un mediu confortabil.",
 };
 
 export default function RootLayout({

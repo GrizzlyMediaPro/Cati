@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/contact-caty.jpg"
-            alt="Dr. Catalina Nae Iancu - Contact"
+            alt="Dr. Catalina-Ionela Iancu - Contact"
             fill
             className="object-cover"
             priority
@@ -66,9 +66,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#7A1E39' }}>Adresă</h3>
                     <p className="text-lg" style={{ color: '#333333' }}>
-                      Str. Exemplu Nr. 123<br/>
-                      Sector 1, București<br/>
-                      România, 010001
+                      Str. Iancu Capitanu nr.19<br/>
+                      Etaj 1, interfon 102<br/>
+                      Sector 2, București
                     </p>
                   </div>
                 </div>
@@ -85,10 +85,10 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#7A1E39' }}>Telefon</h3>
                     <p className="text-lg mb-3" style={{ color: '#333333' }}>
-                      +40 XXX XXX XXX
+                      0726822173
                     </p>
                     <a 
-                      href="tel:+40XXXXXXXXX" 
+                      href="tel:0726822173" 
                       className="inline-block px-6 py-3 rounded-full font-semibold text-white transition-transform hover:scale-105 shadow-lg"
                       style={{ backgroundColor: '#E24B6C' }}
                     >
@@ -112,7 +112,7 @@ export default function Contact() {
                       Trimite mesaj rapid
                     </p>
                     <a 
-                      href="https://wa.me/40XXXXXXXXX?text=Bună! Vreau să programez o consultație la cabinetul stomatologic." 
+                      href="https://wa.me/40726822173?text=Bună! Vreau să programez o consultație la cabinetul stomatologic." 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block px-6 py-3 rounded-full font-semibold text-white transition-transform hover:scale-105 shadow-lg"
@@ -136,10 +136,10 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#7A1E39' }}>Email</h3>
                     <p className="text-lg mb-3" style={{ color: '#333333' }}>
-                      contact@drcatalinax.ro
+                      caty_nae@yahoo.com
                     </p>
                     <a 
-                      href="mailto:contact@drcatalinax.ro" 
+                      href="mailto:caty_nae@yahoo.com" 
                       className="inline-block px-6 py-3 rounded-full font-semibold text-white transition-transform hover:scale-105 shadow-lg"
                       style={{ backgroundColor: '#7A1E39' }}
                     >
@@ -160,9 +160,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#7A1E39' }}>Program</h3>
                     <div className="space-y-1" style={{ color: '#333333' }}>
-                      <p><strong>Luni - Vineri:</strong> 09:00 - 19:00</p>
-                      <p><strong>Sâmbătă:</strong> 10:00 - 14:00</p>
-                      <p><strong>Duminică:</strong> Închis</p>
+                      <p><strong>L, Mi:</strong> 14:00 - 20:00</p>
+                      <p><strong>Ma, Joi, V:</strong> 8:00 - 14:00</p>
                     </div>
                   </div>
                 </div>
@@ -181,14 +180,14 @@ export default function Contact() {
               {/* Google Maps Embed */}
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.1234567890123!2d26.1025!3d44.4268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff47c2971b39%3A0x4e8b4c8b4c8b4c8b!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1234567890123!5m2!1sro!2sro"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.535510350319!2d26.118512176046575!3d44.44268937107565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff331b4fd461%3A0xc0a16e4da72c98b4!2sStrada%20Iancu%20C%C4%83pitanu%2019%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sen!2sro!4v1762516619527!5m2!1sen!2sro"
                   width="100%"
-                  height="400"
+                  height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Locația Cabinetului Stomatologic Dr. Catalina Nae Iancu"
+                  title="Locația Cabinetului Stomatologic Dr. Catalina-Ionela Iancu"
                 ></iframe>
               </div>
 
@@ -200,19 +199,19 @@ export default function Contact() {
                 <div className="space-y-3" style={{ color: '#333333' }}>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#E24B6C' }}></div>
-                    <span><strong>Cu metroul:</strong> Stația Universitate (5 min de mers pe jos)</span>
+                    <span><strong>Cu metroul:</strong> Stația Piața Unirii sau Piața Victoriei, apoi autobuz sau tramvai până în zona Foisorul de Foc</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#E24B6C' }}></div>
-                    <span><strong>Cu autobuzul:</strong> Linia 1, 2, 3 - stația Piața Universității</span>
+                    <span><strong>Cu autobuzul/tramvaiul:</strong> Stații în apropierea Foisorului de Foc, apoi 2-3 minute de mers pe jos până la Str. Iancu Capitanu nr.19</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#E24B6C' }}></div>
-                    <span><strong>Cu mașina:</strong> Parcare disponibilă în fața cabinetului</span>
+                    <span><strong>Cu mașina:</strong> Cabinetul se află în zona Foisorului de Foc, pe Str. Iancu Capitanu nr.19, etaj 1, interfon 102</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#E24B6C' }}></div>
-                    <span><strong>Cu taxi/Uber:</strong> Adresa exactă: Str. Exemplu Nr. 123</span>
+                    <span><strong>Cu taxi/Uber:</strong> Adresa exactă: Str. Iancu Capitanu nr.19, etaj 1, interfon 102, sector 2, București (în preajma Foisorului de Foc)</span>
                   </div>
                 </div>
               </div>
@@ -233,11 +232,11 @@ export default function Contact() {
             Pentru urgențe în afara programului, sună la numărul de urgență
           </p>
           <a 
-            href="tel:+40XXXXXXXXX" 
+            href="tel:0726822173" 
             className="inline-block px-8 py-4 bg-white text-2xl font-bold rounded-full transition-transform hover:scale-105 shadow-lg"
             style={{ color: '#7A1E39' }}
           >
-            📞 +40 XXX XXX XXX
+            📞 0726822173
           </a>
         </div>
       </section>

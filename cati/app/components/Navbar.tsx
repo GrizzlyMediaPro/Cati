@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 interface NavbarProps {
-  currentPage?: 'home' | 'despre' | 'servicii' | 'contact';
+  currentPage?: 'home' | 'despre' | 'servicii' | 'contact' | 'lucrari';
 }
 
 export default function Navbar({ currentPage = 'home' }: NavbarProps) {
@@ -41,7 +41,7 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               <Link href="/" className="flex items-center">
                 <Image
                   src="/logo-cati.png"
-                  alt="Cabinet Stomatologic Dr. Catalina Nae Iancu"
+                  alt="Cabinet Stomatologic Dr. Catalina-Ionela Iancu"
                   width={50}
                   height={50}
                   className="object-contain md:w-[60px] md:h-[60px]"
@@ -49,7 +49,7 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
                 />
                 <div className="ml-3 md:ml-4">
                 <h1 className="text-lg md:text-xl font-bold text-white font-heading">
-                  Dr. Catalina Nae Iancu
+                  Dr. Catalina-Ionela Iancu
                 </h1>
                 <p className="text-xs md:text-sm text-white opacity-90">
                   Medic Stomatologie Generala
@@ -61,6 +61,7 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               <Link href="/" className="text-white hover:opacity-75 transition-opacity">Acasă</Link>
               <Link href="/despre" className="text-white hover:opacity-75 transition-opacity">Despre</Link>
               <Link href="/servicii" className="text-white hover:opacity-75 transition-opacity">Servicii</Link>
+              <Link href="/lucrari" className="text-white hover:opacity-75 transition-opacity">Lucrări</Link>
               <Link href="/contact" className="text-white hover:opacity-75 transition-opacity">Contact</Link>
             </div>
             <div className="md:hidden">
@@ -84,7 +85,7 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               <Link href="/" className="flex items-center" onClick={closeMobileMenu}>
                 <Image
                   src="/logo-cati.png"
-                  alt="Cabinet Stomatologic Dr. Catalina Nae Iancu"
+                  alt="Cabinet Stomatologic Dr. Catalina-Ionela Iancu"
                   width={50}
                   height={50}
                   className="object-contain pt-10 md:pt-0 md:w-[60px] md:h-[60px]"
@@ -92,10 +93,10 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
                 />
                 <div className="ml-3 md:ml-4 pt-7 md:pt-0">
                 <h1 className="text-lg md:text-xl font-bold text-white font-heading">
-                  Dr. Catalina Nae Iancu
+                  Dr. Catalina-Ionela Iancu
                 </h1>
                 <p className="text-xs md:text-sm text-white opacity-90">
-                  Medic Stomatologie Generala
+                  Medic Dentist Stomatologie Generala
                 </p>
                 </div>
               </Link>
@@ -120,6 +121,12 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               className={`text-white hover:opacity-75 transition-opacity ${isActive('servicii')}`}
             >
               Servicii
+            </Link>
+            <Link 
+              href="/lucrari" 
+              className={`text-white hover:opacity-75 transition-opacity ${isActive('lucrari')}`}
+            >
+              Lucrări
             </Link>
             <Link 
               href="/contact" 
@@ -170,6 +177,13 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               onClick={closeMobileMenu}
             >
               Servicii
+            </Link>
+            <Link 
+              href="/lucrari" 
+              className={`block px-3 py-4 hover:opacity-75 transition-opacity rounded-lg hover:bg-white hover:bg-opacity-10 border-b border-[#7A1E39] border-opacity-30 ${isActiveMobile('lucrari')}`}
+              onClick={closeMobileMenu}
+            >
+              Lucrări
             </Link>
             <Link 
               href="/contact" 

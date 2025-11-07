@@ -8,27 +8,27 @@ export default function Footer() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2 lg:col-span-2">
-            <div className="flex items-center mb-4">
+          <div className="md:col-span-2 lg:col-span-2 text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start mb-4">
               <Image
                 src="/logo-cati.png"
-                alt="Dr. Catalina Nae Iancu - Medic Stomatologie Generala"
+                alt="Dr. Catalina-Ionela Iancu - Medic Stomatologie Generala"
                 width={50}
                 height={50}
                 className="object-contain md:w-[60px] md:h-[60px]"
               />
               <div className="ml-3 md:ml-4">
-                <h3 className="text-lg md:text-2xl font-bold text-white">Dr. Catalina Nae Iancu</h3>
+                <h3 className="text-lg md:text-2xl font-bold text-white">Dr. Catalina-Ionela Iancu</h3>
                 <p className="text-sm md:text-base text-white opacity-90">Medic Stomatologie Generala</p>
               </div>
             </div>
-            <p className="text-white opacity-90 mb-4 text-sm md:text-base max-w-md">
+            <p className="text-white opacity-90 mb-4 text-sm md:text-base max-w-md mx-auto md:mx-0">
               Oferim servicii stomatologice de înaltă calitate într-un mediu modern și confortabil. 
               Zâmbetul tău este prioritatea noastră.
             </p>
-            <div className="flex space-x-3 md:space-x-4">
+            <div className="flex space-x-3 md:space-x-4 justify-center md:justify-start">
               <a 
-                href="tel:+40XXXXXXXXX" 
+                href="tel:0726822173" 
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
                 style={{ backgroundColor: '#E24B6C' }}
                 aria-label="Sună-ne"
@@ -38,7 +38,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://wa.me/40XXXXXXXXX?text=Bună! Vreau să programez o consultație." 
+                href="https://wa.me/40726822173?text=Bună! Vreau să programez o consultație." 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
@@ -50,7 +50,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="mailto:contact@drcatalinax.ro" 
+                href="mailto:caty_nae@yahoo.com" 
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
                 style={{ backgroundColor: '#A3C7E2' }}
                 aria-label="Email"
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4">Link-uri Rapide</h4>
             <ul className="space-y-2">
               <li>
@@ -83,6 +83,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/lucrari" className="text-white opacity-90 hover:opacity-100 transition-opacity text-sm md:text-base">
+                  Lucrări
+                </a>
+              </li>
+              <li>
                 <a href="/contact" className="text-white opacity-90 hover:opacity-100 transition-opacity text-sm md:text-base">
                   Contact
                 </a>
@@ -91,34 +96,34 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4">Contact</h4>
             <div className="space-y-2 md:space-y-3">
-              <div className="flex items-start">
+              <div className="flex items-start justify-center md:justify-start">
                 <svg className="w-4 h-4 md:w-5 md:h-5 text-white mt-1 mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
                 </svg>
                 <p className="text-white opacity-90 text-xs md:text-sm">
-                  Str. Exemplu Nr. 123<br/>
-                  Sector 1, București<br/>
-                  România, 010001
+                  Str. Iancu Capitanu nr.19<br/>
+                  Etaj 1, interfon 102<br/>
+                  Sector 2, București
                 </p>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start justify-center md:justify-start">
                 <svg className="w-4 h-4 md:w-5 md:h-5 text-white mt-1 mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                 </svg>
                 <p className="text-white opacity-90 text-xs md:text-sm">
-                  +40 XXX XXX XXX
+                  0726822173
                 </p>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start justify-center md:justify-start">
                 <svg className="w-4 h-4 md:w-5 md:h-5 text-white mt-1 mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
                 </svg>
                 <div className="text-white opacity-90 text-xs md:text-sm">
-                  <p>Luni - Vineri: 09:00 - 19:00</p>
-                  <p>Sâmbătă: 10:00 - 14:00</p>
+                  <p>L, Mi: 14:00 - 20:00</p>
+                  <p>Ma, Joi, V: 8:00 - 14:00</p>
                 </div>
               </div>
             </div>
@@ -127,22 +132,11 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="border-t border-white border-opacity-20 pt-4 md:pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
-            <div className="text-white text-center md:text-left">
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <div className="text-white text-center">
               <p className="text-xs md:text-sm opacity-90">
-                © 2025 Cabinet Stomatologic Dr. Catalina Nae Iancu. Toate drepturile rezervate.
+                © 2025 Cabinet Stomatologic Dr. Catalina-Ionela Iancu. Toate drepturile rezervate.
               </p>
-            </div>
-            <div className="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-xs md:text-sm">
-              <a href="#" className="text-white opacity-90 hover:opacity-100 transition-opacity">
-                Politica de Confidențialitate
-              </a>
-              <a href="#" className="text-white opacity-90 hover:opacity-100 transition-opacity">
-                Termeni și Condiții
-              </a>
-              <a href="#" className="text-white opacity-90 hover:opacity-100 transition-opacity">
-                Cookies
-              </a>
             </div>
           </div>
         </div>

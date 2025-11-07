@@ -35,10 +35,10 @@ export default function Hero() {
               <div className="relative">
                 <div className="absolute inset-0 rounded-full opacity-20" style={{ backgroundColor: '#E24B6C' }}></div>
                 <Image
-                  src="/andreeahero.png"
+                  src="/cati.png"
                   alt="Cabinet Stomatologic"
-                  width={400}
-                  height={400}
+                  width={450}
+                  height={450}
                   className="object-contain drop-shadow-2xl relative z-10"
                 />
               </div>
