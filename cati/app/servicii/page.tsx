@@ -112,7 +112,7 @@ export default function Servicii() {
                 <tr><td className="px-4 py-3">Extracție dinte monoradicular</td><td className="px-4 py-3 text-right">300</td></tr>
                 <tr><td className="px-4 py-3">Extracție dinte pluriradicular</td><td className="px-4 py-3 text-right">400</td></tr>
                 <tr><td className="px-4 py-3">Extracție molar minte (erupt complet)</td><td className="px-4 py-3 text-right">500-700</td></tr>
-                <tr><td className="px-4 py-3">Extracție dinte semiinclus</td><td className="px-4 py-3 text-right">800-1000</td></tr>
+                <tr><td className="px-4 py-3">Extracție molar de minte semiinclus</td><td className="px-4 py-3 text-right">800-1000</td></tr>
                 <tr><td className="px-4 py-3">Extracție dinte parodontic</td><td className="px-4 py-3 text-right">200</td></tr>
                 <tr><td className="px-4 py-3">Tratament hemoragie post-extracție</td><td className="px-4 py-3 text-right">150</td></tr>
                 <tr><td className="px-4 py-3">Tratament alveolită post-extracție</td><td className="px-4 py-3 text-right">150</td></tr>

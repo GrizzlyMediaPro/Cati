@@ -8,22 +8,29 @@ export default function Lucrari() {
       id: 1,
       inainte: "/pozalucrareinainte1.jpg",
       dupa: "/pozalucraredupa1.jpg",
-      titlu: "Lucrare 1",
+      titlu: "Cazul 1",
       descriere: "Transformare completă a zâmbetului prin tratamente estetice și restaurative de înaltă calitate."
     },
     {
       id: 2,
       inainte: "/pozalucrareinainte2.jpg",
       dupa: "/pozalucraredupa2.jpg",
-      titlu: "Lucrare 2",
+      titlu: "Cazul 2",
       descriere: "Reconstrucție dentară cu rezultate naturale și durabile, respectând estetica facială."
     },
     {
       id: 3,
       inainte: "/pozalucrareinainte3.jpg",
       dupa: "/pozalucraredupa3.jpg",
-      titlu: "Lucrare 3",
+      titlu: "Cazul 3",
       descriere: "Tratament complex de restaurare cu tehnologii moderne și materiale premium."
+    },
+    {
+      id: 4,
+      inainte: "/cazul4-inainte.jpg",
+      dupa: "/cazul4-dupa.jpg",
+      titlu: "Cazul 4",
+      descriere: "Tratament profesional cu rezultate remarcabile, demonstrând excelența în stomatologie."
     }
   ];
 
@@ -67,85 +74,67 @@ export default function Lucrari() {
       </section>
 
       {/* Lucrări Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#7A1E39' }}>
-              Rezultate Reale, Zâmbete Perfecte
-            </h2>
-            <div className="w-24 h-1 mx-auto rounded" style={{ backgroundColor: '#E24B6C' }}></div>
-            <p className="mt-6 text-lg max-w-3xl mx-auto" style={{ color: '#333333' }}>
-              Fiecare lucrare reprezintă dedicarea noastră pentru a oferi cele mai bune rezultate, 
-              combinând tehnologii moderne cu experiență și atenție la detalii.
-            </p>
-          </div>
+      {lucrari.map((lucrare, index) => (
+        <section 
+          key={lucrare.id} 
+          className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-white"
+        >
+          <div className="max-w-7xl mx-auto w-full py-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold mb-2" style={{ color: '#7A1E39' }}>
+                {lucrare.titlu}
+              </h3>
+              <p className="text-lg" style={{ color: '#666666' }}>
+                {lucrare.descriere}
+              </p>
+            </div>
 
-          <div className="space-y-24">
-            {lucrari.map((lucrare, index) => (
-              <div key={lucrare.id} className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Înainte */}
+              <div className="space-y-4">
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold mb-2" style={{ color: '#7A1E39' }}>
-                    {lucrare.titlu}
-                  </h3>
-                  <p className="text-lg" style={{ color: '#666666' }}>
-                    {lucrare.descriere}
-                  </p>
+                  <h4 className="text-2xl font-semibold mb-2" style={{ color: '#7A1E39' }}>
+                    Înainte
+                  </h4>
+                  <div className="w-16 h-1 mx-auto rounded" style={{ backgroundColor: '#E24B6C' }}></div>
                 </div>
-
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  {/* Înainte */}
-                  <div className="space-y-4">
-                    <div className="text-center">
-                      <h4 className="text-2xl font-semibold mb-2" style={{ color: '#7A1E39' }}>
-                        Înainte
-                      </h4>
-                      <div className="w-16 h-1 mx-auto rounded" style={{ backgroundColor: '#E24B6C' }}></div>
-                    </div>
-                    <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-50 border-2 border-gray-100">
-                      <div className="relative aspect-square bg-white">
-                        <Image
-                          src={lucrare.inainte}
-                          alt={`Înainte - ${lucrare.titlu}`}
-                          fill
-                          className="object-contain p-2"
-                          priority={index === 0}
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* După */}
-                  <div className="space-y-4">
-                    <div className="text-center">
-                      <h4 className="text-2xl font-semibold mb-2" style={{ color: '#7A1E39' }}>
-                        După
-                      </h4>
-                      <div className="w-16 h-1 mx-auto rounded" style={{ backgroundColor: '#E24B6C' }}></div>
-                    </div>
-                    <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-50 border-2" style={{ borderColor: '#7A1E39' }}>
-                      <div className="relative aspect-square bg-white">
-                        <Image
-                          src={lucrare.dupa}
-                          alt={`După - ${lucrare.titlu}`}
-                          fill
-                          className="object-contain p-2"
-                          priority={index === 0}
-                        />
-                      </div>
-                    </div>
+                <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-50 border-2 border-gray-100">
+                  <div className="relative aspect-square bg-white">
+                    <Image
+                      src={lucrare.inainte}
+                      alt={`Înainte - ${lucrare.titlu}`}
+                      fill
+                      className="object-contain p-2"
+                      priority={index === 0}
+                    />
                   </div>
                 </div>
-
-                {index < lucrari.length - 1 && (
-                  <div className="flex justify-center pt-8">
-                    <div className="w-24 h-1 rounded" style={{ backgroundColor: '#A3C7E2' }}></div>
-                  </div>
-                )}
               </div>
-            ))}
+
+              {/* După */}
+              <div className="space-y-4">
+                <div className="text-center">
+                  <h4 className="text-2xl font-semibold mb-2" style={{ color: '#7A1E39' }}>
+                    După
+                  </h4>
+                  <div className="w-16 h-1 mx-auto rounded" style={{ backgroundColor: '#E24B6C' }}></div>
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-50 border-2" style={{ borderColor: '#7A1E39' }}>
+                  <div className="relative aspect-square bg-white">
+                    <Image
+                      src={lucrare.dupa}
+                      alt={`După - ${lucrare.titlu}`}
+                      fill
+                      className="object-contain p-2"
+                      priority={index === 0}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       {/* Call to Action */}
       <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #7A1E39 0%, #E24B6C 100%)' }}>

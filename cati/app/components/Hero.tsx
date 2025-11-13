@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="acasa" className="min-h-screen flex flex-col pt-12 md:pt-0 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #7A1E39 0%, #E24B6C 50%, #A3C7E2 100%)' }}>
+    <section id="acasa" className="min-h-[85vh] flex flex-col pt-12 md:pt-0 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #7A1E39 0%, #E24B6C 50%, #A3C7E2 100%)' }}>
       <div className="max-w-7xl mx-auto flex-1 flex flex-col">
-        <div className="flex-1 flex items-center pt-20">
+        <div className="flex-1 flex items-center pt-20 pb-0">
           <div className="grid md:grid-cols-2 gap-12 items-center w-full">
-            <div>
+            <div className="order-1">
               <h2 className="text-5xl font-bold mb-6 text-white font-heading">
                 Zâmbetul tău, 
                 <br />
@@ -31,14 +31,14 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center">
-              <div className="relative">
+            <div className="order-2 flex justify-center md:justify-end md:items-end">
+              <div className="relative w-[350px] h-[350px] md:w-[600px] md:h-[600px]">
                 <div className="absolute inset-0 rounded-full opacity-20" style={{ backgroundColor: '#E24B6C' }}></div>
                 <Image
-                  src="/cati.png"
+                  src="/final.png"
                   alt="Cabinet Stomatologic"
-                  width={450}
-                  height={450}
+                  fill
+                  sizes="(max-width: 768px) 350px, 600px"
                   className="object-contain drop-shadow-2xl relative z-10"
                 />
               </div>
