@@ -24,11 +24,11 @@ export default function Home() {
             <div className="rounded-2xl p-8 shadow-xl" style={{ backgroundColor: '#7A1E39' }}>
               <div className="aspect-square bg-white rounded-xl flex items-center justify-center">
           <Image
-                  src="/logo-cati.png"
+                  src="/sub-hero.jpg"
                   alt="Dr. Catalina-Ionela Iancu"
                   width={300}
                   height={300}
-                  className="object-contain"
+                  className="object-cover rounded-xl shadow-2xl"
                 />
               </div>
             </div>
