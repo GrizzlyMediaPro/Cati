@@ -1,6 +1,37 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+const baseUrl = "https://drcatalinaiancu.ro";
+
+export const metadata: Metadata = {
+  title: "Contact - Dr. Catalina-Ionela Iancu | Cabinet Stomatologic București",
+  description: "Contactează cabinetul stomatologic Dr. Catalina-Ionela Iancu din București, Sector 2. Locație: Str. Iancu Capitanu nr.19, etaj 1, interfon 102. Telefon: 0726822173. Email: caty_nae@yahoo.com. Programează-te acum!",
+  keywords: [
+    "contact dentist București",
+    "cabinet stomatologic Sector 2",
+    "programare stomatologie",
+    "dentist Iancu Capitanu",
+    "contact Dr. Catalina-Ionela Iancu",
+    "telefon dentist București",
+  ],
+  openGraph: {
+    title: "Contact - Dr. Catalina-Ionela Iancu | Cabinet Stomatologic București",
+    description: "Contactează cabinetul stomatologic din București, Sector 2. Locație: Str. Iancu Capitanu nr.19. Telefon: 0726822173. Programează-te acum!",
+    url: `${baseUrl}/contact`,
+    type: "website",
+    images: [`${baseUrl}/contact-caty.jpg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact - Dr. Catalina-Ionela Iancu | Cabinet Stomatologic București",
+    description: "Contactează cabinetul stomatologic din București, Sector 2. Programează-te acum!",
+  },
+  alternates: {
+    canonical: `${baseUrl}/contact`,
+  },
+};
 
 export default function Contact() {
   return (

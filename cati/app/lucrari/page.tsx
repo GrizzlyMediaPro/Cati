@@ -1,6 +1,37 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+const baseUrl = "https://drcatalinaiancu.ro";
+
+export const metadata: Metadata = {
+  title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
+  description: "Vezi portofoliul de lucrări stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament. Rezultate reale, zâmbete perfecte.",
+  keywords: [
+    "portofoliu stomatologie",
+    "lucrări dentare",
+    "rezultate tratamente dentare",
+    "înainte și după stomatologie",
+    "transformări dentare",
+    "cazuri clinice stomatologie",
+  ],
+  openGraph: {
+    title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
+    description: "Vezi portofoliul de lucrări stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament.",
+    url: `${baseUrl}/lucrari`,
+    type: "website",
+    images: [`${baseUrl}/DSC01947.jpg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
+    description: "Vezi portofoliul de lucrări stomatologice realizate. Rezultate reale, zâmbete perfecte.",
+  },
+  alternates: {
+    canonical: `${baseUrl}/lucrari`,
+  },
+};
 
 export default function Lucrari() {
   const lucrari = [
