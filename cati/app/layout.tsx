@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description: "Cabinet stomatologic modern în București, Sector 2. Dr. Catalina-Ionela Iancu oferă tratamente dentare profesionale: odontoterapie restauratoare, endodonție, implantologie, protetică dentară, parodontologie, pedodonție și chirurgie orală. Programează-te acum!",
     images: [
       {
-        url: `${baseUrl}/final.png`,
+        url: `${baseUrl}/catalina-iancu).png`,
         width: 1200,
         height: 630,
         alt: "Dr. Catalina-Ionela Iancu - Cabinet Stomatologic București",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dr. Catalina-Ionela Iancu - Cabinet Stomatologic București",
     description: "Cabinet stomatologic modern în București, Sector 2. Tratamente dentare profesionale: odontoterapie, endodonție, implantologie, protetică dentară și multe altele.",
-    images: [`${baseUrl}/final.png`],
+    images: [`${baseUrl}/catalina-iancu).png`],
     creator: "@drcatalinaiancu",
   },
   robots: {
@@ -111,7 +111,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "Dr. Catalina-Ionela Iancu",
-    "image": `${baseUrl}/final.png`,
+    "image": `${baseUrl}/catalina-iancu).png`,
     "url": baseUrl,
     "telephone": "+40726822173",
     "email": "caty_nae@yahoo.com",

@@ -21,12 +21,21 @@ export const metadata: Metadata = {
     description: "Contactează cabinetul stomatologic din București, Sector 2. Locație: Str. Iancu Capitanu nr.19. Telefon: 0726822173. Programează-te acum!",
     url: `${baseUrl}/contact`,
     type: "website",
-    images: [`${baseUrl}/contact-caty.jpg`],
+    images: [
+      {
+        url: `${baseUrl}/contact-caty.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Contact - Dr. Catalina-Ionela Iancu - Cabinet Stomatologic București",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact - Dr. Catalina-Ionela Iancu | Cabinet Stomatologic București",
     description: "Contactează cabinetul stomatologic din București, Sector 2. Programează-te acum!",
+    images: [`${baseUrl}/contact-caty.jpg`],
   },
   alternates: {
     canonical: `${baseUrl}/contact`,

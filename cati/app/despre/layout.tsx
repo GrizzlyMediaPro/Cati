@@ -19,12 +19,21 @@ export const metadata: Metadata = {
     description: "Dr. Catalina-Ionela Iancu - Medic stomatolog cu peste 12 ani de experiență, membru Colegiul Medicilor Dentiști București.",
     url: `${baseUrl}/despre`,
     type: "website",
-    images: [`${baseUrl}/sub-hero.jpg`],
+    images: [
+      {
+        url: `${baseUrl}/sub-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Despre - Dr. Catalina-Ionela Iancu - Experiență și Profesionalism",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Despre - Dr. Catalina-Ionela Iancu | Experiență și Profesionalism",
     description: "Medic stomatolog cu peste 12 ani de experiență. Certificări în endodonție, protetică, estetică dentară și chirurgie orală.",
+    images: [`${baseUrl}/sub-hero.jpg`],
   },
   alternates: {
     canonical: `${baseUrl}/despre`,

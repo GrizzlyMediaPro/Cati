@@ -21,12 +21,21 @@ export const metadata: Metadata = {
     description: "Vezi portofoliul de lucrări stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament.",
     url: `${baseUrl}/lucrari`,
     type: "website",
-    images: [`${baseUrl}/DSC01947.jpg`],
+    images: [
+      {
+        url: `${baseUrl}/DSC01947.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Lucrări - Portofoliu Tratamente Dentare - Dr. Catalina-Ionela Iancu",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
     description: "Vezi portofoliul de lucrări stomatologice realizate. Rezultate reale, zâmbete perfecte.",
+    images: [`${baseUrl}/DSC01947.jpg`],
   },
   alternates: {
     canonical: `${baseUrl}/lucrari`,

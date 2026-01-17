@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     description: "Servicii stomatologice complete în București: odontoterapie, endodonție, implantologie, protetică dentară și multe altele. Prețuri transparente.",
     url: `${baseUrl}/servicii`,
     type: "website",
-    images: [`${baseUrl}/DSC01947.jpg`],
+    images: [
+      {
+        url: `${baseUrl}/DSC01947.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Servicii și Prețuri - Dr. Catalina-Ionela Iancu - Cabinet Stomatologic București",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Servicii și Prețuri - Dr. Catalina-Ionela Iancu",
     description: "Servicii stomatologice complete în București cu prețuri transparente. Programează-te acum!",
+    images: [`${baseUrl}/DSC01947.jpg`],
   },
   alternates: {
     canonical: `${baseUrl}/servicii`,
