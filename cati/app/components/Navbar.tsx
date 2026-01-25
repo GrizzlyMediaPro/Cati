@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 interface NavbarProps {
-  currentPage?: 'home' | 'despre' | 'servicii' | 'contact' | 'lucrari';
+  currentPage?: 'home' | 'despre' | 'servicii' | 'contact' | 'lucrari' | 'cazuri';
 }
 
 export default function Navbar({ currentPage = 'home' }: NavbarProps) {
@@ -61,7 +61,7 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               <Link href="/" className="text-white hover:opacity-75 transition-opacity">Acasă</Link>
               <Link href="/despre" className="text-white hover:opacity-75 transition-opacity">Despre</Link>
               <Link href="/servicii" className="text-white hover:opacity-75 transition-opacity">Servicii</Link>
-              <Link href="/lucrari" className="text-white hover:opacity-75 transition-opacity">Lucrări</Link>
+              <Link href="/cazuri" className="text-white hover:opacity-75 transition-opacity">Cazuri</Link>
               <Link href="/contact" className="text-white hover:opacity-75 transition-opacity">Contact</Link>
             </div>
             <div className="md:hidden">
@@ -123,10 +123,10 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               Servicii
             </Link>
             <Link 
-              href="/lucrari" 
-              className={`text-white hover:opacity-75 transition-opacity ${isActive('lucrari')}`}
+              href="/cazuri" 
+              className={`text-white hover:opacity-75 transition-opacity ${isActive('cazuri')}`}
             >
-              Lucrări
+              Cazuri
             </Link>
             <Link 
               href="/contact" 
@@ -179,11 +179,11 @@ export default function Navbar({ currentPage = 'home' }: NavbarProps) {
               Servicii
             </Link>
             <Link 
-              href="/lucrari" 
-              className={`block px-3 py-4 hover:opacity-75 transition-opacity rounded-lg hover:bg-white hover:bg-opacity-10 border-b border-[#7A1E39] border-opacity-30 ${isActiveMobile('lucrari')}`}
+              href="/cazuri" 
+              className={`block px-3 py-4 hover:opacity-75 transition-opacity rounded-lg hover:bg-white hover:bg-opacity-10 border-b border-[#7A1E39] border-opacity-30 ${isActiveMobile('cazuri')}`}
               onClick={closeMobileMenu}
             >
-              Lucrări
+              Cazuri
             </Link>
             <Link 
               href="/contact" 

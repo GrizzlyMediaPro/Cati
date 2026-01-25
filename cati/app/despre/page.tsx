@@ -140,7 +140,7 @@ export default function Despre() {
               <div className="rounded-2xl p-6 shadow-2xl max-w-sm mx-auto relative overflow-visible" style={{ backgroundColor: '#A3C7E2' }}>
                 <div className="aspect-square bg-white rounded-xl flex items-center justify-center relative overflow-hidden">
                   <Image
-                    src="/cati.png"
+                    src="/sub-hero.jpg"
                     alt="Dr. Catalina-Ionela Iancu - Începuturile"
                     width={300}
                     height={300}

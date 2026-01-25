@@ -6,43 +6,43 @@ import Footer from "../components/Footer";
 const baseUrl = "https://drcatalinaiancu.ro";
 
 export const metadata: Metadata = {
-  title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
-  description: "Vezi portofoliul de lucrări stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament. Rezultate reale, zâmbete perfecte.",
+  title: "Cazuri - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
+  description: "Vezi portofoliul de cazuri stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament. Rezultate reale, zâmbete perfecte.",
   keywords: [
     "portofoliu stomatologie",
-    "lucrări dentare",
-    "rezultate tratamente dentare",
+    "cazuri dentare",
+    "rezultate cazuri dentare",
     "înainte și după stomatologie",
     "transformări dentare",
     "cazuri clinice stomatologie",
   ],
   openGraph: {
-    title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
-    description: "Vezi portofoliul de lucrări stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament.",
-    url: `${baseUrl}/lucrari`,
+    title: "Cazuri - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
+    description: "Vezi portofoliul de cazuri stomatologice realizate de Dr. Catalina-Ionela Iancu. Transformări dentare spectaculoase înainte și după tratament.",
+    url: `${baseUrl}/cazuri`,
     type: "website",
     images: [
       {
         url: `${baseUrl}/DSC01947.jpg`,
         width: 1200,
         height: 630,
-        alt: "Lucrări - Portofoliu Tratamente Dentare - Dr. Catalina-Ionela Iancu",
+        alt: "Cazuri - Portofoliu Tratamente Dentare - Dr. Catalina-Ionela Iancu",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lucrări - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
-    description: "Vezi portofoliul de lucrări stomatologice realizate. Rezultate reale, zâmbete perfecte.",
+    title: "Cazuri - Portofoliu Tratamente Dentare | Dr. Catalina-Ionela Iancu",
+    description: "Vezi portofoliul de cazuri stomatologice realizate. Rezultate reale, zâmbete perfecte.",
     images: [`${baseUrl}/DSC01947.jpg`],
   },
   alternates: {
-    canonical: `${baseUrl}/lucrari`,
+    canonical: `${baseUrl}/cazuri`,
   },
 };
 
-export default function Lucrari() {
+export default function Cazuri() {
   const lucrari = [
     {
       id: 1,
@@ -76,7 +76,7 @@ export default function Lucrari() {
 
   return (
     <div className="min-h-screen">
-      <Navbar currentPage="lucrari" />
+      <Navbar currentPage="cazuri" />
 
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex flex-col px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -103,7 +103,7 @@ export default function Lucrari() {
           <div className="flex-1 flex items-center justify-center pt-20">
             <div className="text-center">
               <h1 className="text-5xl font-bold text-white mb-6 drop-shadow-lg">
-                Lucrările Noastre
+                Cazurile Noastre
               </h1>
               <p className="text-xl text-white opacity-95 max-w-3xl mx-auto drop-shadow-md">
                 Descoperă transformările realizate și rezultatele obținute prin tratamente stomatologice de excelență
@@ -113,13 +113,13 @@ export default function Lucrari() {
         </div>
       </section>
 
-      {/* Lucrări Section */}
+      {/* Cazuri Section */}
       {lucrari.map((lucrare, index) => (
         <section 
           key={lucrare.id} 
-          className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-white"
+          className="flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-white py-12"
         >
-          <div className="max-w-7xl mx-auto w-full py-12">
+          <div className="max-w-7xl mx-auto w-full py-4">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold mb-2" style={{ color: '#7A1E39' }}>
                 {lucrare.titlu}
